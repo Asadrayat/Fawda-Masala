@@ -1,0 +1,20 @@
+{% comment %} sections/bundle-status.liquid: Displays cart status message for AJAX rendering {% endcomment %}
+<div data-bundle-status>
+  {% liquid
+    assign max_quantity = 3
+    assign remaining_unlock_shipping = max_quantity | minus: cart.item_count
+    if remaining_unlock_shipping < 0
+      assign remaining_unlock_shipping = 0
+    endif
+  %}
+
+  {% if remaining_unlock_shipping > 0 %}
+    <p aria-live="polite" class="cart__message">
+      {{ remaining_unlock_shipping }} more item{{ remaining_unlock_shipping | pluralize: 's' }} to proceed to checkout
+    </p>
+  {% else %}
+    <p aria-live="polite" class="cart__message cart__message--success">
+      {{- 'Your cart is ready to checkout!' -}}
+    </p>
+  {% endif %}
+</div>
