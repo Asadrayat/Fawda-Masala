@@ -102,8 +102,8 @@ Structured collections and product flows to reduce friction and improve product 
 
 If you're looking for a Shopify developer who focuses on performance, clean code, and real business results:
 
-- Email: hello@fadwamasala.com
-- Portfolio: (Add your portfolio link here)
+- Email: asad.rayat4@gmail.com
+- Portfolio: https://github.com/Asadrayat?tab=repositories
 
 ---
 
